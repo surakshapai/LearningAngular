@@ -97,3 +97,19 @@ _ _ _
 
 * Expressions define a two way binding.
 * Expressions are re-evaluated when the property changes. So each time some property connected to the directive changes, the expressions reflect the change on the web page
+_ _ _
+
+### Custom Directives
+
+```
+app.directive('nameOfTheDirective', function(){
+  return {
+    restrict: E //Element type,
+    templateUrl: 'product-title.html'
+  };
+  })
+```
+
+* Custom directives can be of type Element (E), Attribute (A).
+* Returns an object, with type and the url to load.
+* The name of the directive is
