@@ -1,0 +1,10 @@
+<div ng-controller="GallerController as gallery" ng-show="book.images.length">
+		<div class="img-wrap">
+			<img src="{{book.images[gallery.current]}}" alt=""/>
+		</div>
+		<ul class="img-thumbnails clearfix">
+			<li class="small-image pull-left thumbnail" ng-repeat="image in book.images">
+				<img ng-src="{{image}}" alt=""/>
+			</li>
+		</ul>
+	</div>

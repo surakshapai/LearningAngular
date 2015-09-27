@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="book">
+<head>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body ng-controller="BookController as bookController">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/products.js"></script>
+
+
+
+	<!-- StoreController access is kept inside this div -->
+	<div class="list-group">
+		<div class="list-group-item" ng-repeat="book in bookController.books">
+			<h3>{{book.name}} <em class="pull-right">{{book.author}}</em></h3>
+
+			
+			<!-- Image gallery -->
+			<!-- <product-gallery>
+			</product-gallery> -->
+
+			<!-- Tabs for Product Details -->
+			<product-tabs>
+			</product-tabs>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.bookImg {
+	width:200px;
+	height:200px;
+}
+
+.bookDetails {
+	position: relative;
+	overflow: hidden;
+	line-height: 10px;
+}
+
+.bookName, .bookRating {
+	float: left;
+}
+
+.ng-invalid.ng-dirty {
+	border-color: red;
+}
+
+.ng-valid.ng-dirty {
+	border-color: green;
+}
